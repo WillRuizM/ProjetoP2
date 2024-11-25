@@ -6,9 +6,7 @@ public class Tool {
     public static Cliente converterCliente (Map<String,Object> registro){
         return new Cliente((Integer)registro.get("id"),
                             (String)registro.get("nome"),
-                            (String)registro.get("cpf"),
-                            (String)registro.get("email"),
-                            (String)registro.get("nivel"));
+                            (String)registro.get("cpf"));
 
 
     }

@@ -47,9 +47,7 @@
 			<div class="card-body ">
 				<form th:action="@{'/atualizar/' + ${id}}" method=post th:object="${cliente}">
 					Nome: <input type="text" th:field="*{nome}"><br>
-					CPF: <input type="text" th:field="*{cpf}"><br>
-					E-mail:<input type="text" th:field="*{email}"><br>
-					Nivel:<input type="text" th:field="*{nivel}"><br><br><br>
+					CPF: <input type="text" th:field="*{cpf}"><br><br><br>
 					<input class="btn btn-primary" type="submit" value="Atualizar" >
 				</form><br>
             		<a class="btn btn-primary" th:href="@{/}">Voltar para Home</a>
