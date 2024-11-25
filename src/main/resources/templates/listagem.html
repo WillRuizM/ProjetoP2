@@ -46,13 +46,17 @@
                         <th>ID</th>
                         <th>Nome</th>
                         <th>CPF</th>
+                        <th>Email</th>
+                        <th>Nivel</th>
                     </tr>
                 </thead>
                     <tbody>
                         <tr th:each="cliente : ${clientes}">
                             <td th:text="${cliente.id}"></td>
                             <td th:text="${cliente.nome}"></td>
-                            <td th:text="${cliente.cpf}"></td><br>
+                            <td th:text="${cliente.cpf}"></td>
+                            <td th:text="${cliente.email}"></td>
+                            <td th:text="${cliente.nivel}"></td><br>
                             <td><a class="btn btn-primary" th:href="@{'/atualizar/' + ${cliente.id}}">Atualizar</a></td>
                             <td>
                                 <form th:action="@{'/deletar/' + ${cliente.id}}" method="post">
