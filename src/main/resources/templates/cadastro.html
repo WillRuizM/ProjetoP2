@@ -44,10 +44,10 @@
 		<div class="card text-white bg-secondary my-5 py-4 text-center">
 			<div class="card-body " >
 				<form th:action="@{/cadastro}" method=post th:object="${cliente}">
-				Nome:   <input type="text" th:field="*{nome}"><br>
-				CPF:   <input type="text" th:field="*{cpf}"><br>
-				E-mail:   <input type="text" th:field="*{email}"><br>
-				Nivel:   <input type="text" th:field="*{nivel}"><br><br>
+				Nome: <input type="text" th:field="*{nome}"><br>
+				CPF: <input type="text" th:field="*{cpf}"><br>
+				E-mail:<input type="text" th:field="*{email}"><br>
+				Nivel: <input type="text" th:field="*{nivel}"><br><br>
 				<input type="submit" value="Cadastrar" class="btn btn-primary">
 				</form>
 			</div>

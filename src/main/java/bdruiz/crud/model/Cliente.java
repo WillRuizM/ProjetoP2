@@ -44,9 +44,10 @@ public class Cliente {
         return cpf;
     }
 
-    public void Cpf(String cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
     public String getEmail() {
         return email;
     }
@@ -54,6 +55,7 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
+
     public String getNivel() {
         return nivel;
     }
@@ -61,5 +63,7 @@ public class Cliente {
     public void setNivel(String nivel) {
         this.nivel = nivel;
     }
+    
 
+    
 }

@@ -24,7 +24,7 @@ public class ClienteDAO {
 	}
 
     public void inserir(Cliente cli){
-        String sql = "INSERT INTO cliente(nome,cpf,email,nivel) VALUES (?,?,?,?);";
+        String sql = "INSERT INTO cliente (nome, cpf, email, nivel) VALUES (?,?,?,?);";
         Object[] parametros = new Object[4];
         parametros[0] = cli.getNome();
         parametros[1] = cli.getCpf();
@@ -41,7 +41,7 @@ public class ClienteDAO {
 
     public void atualizarCliente(int id, Cliente cli){
         String sql = "UPDATE cliente SET";
-        sql += " nome = ?, cpf =? , email =?, nivel=?  WHERE id = ?";
+        sql += " nome = ?, cpf = ? , email = ?, nivel= ?  WHERE id = ?";
         jdbc.update (sql, cli.getNome(), cli.getCpf(),cli.getEmail(),cli.getNivel(), id);
 
     }
